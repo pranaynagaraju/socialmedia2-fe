@@ -1,0 +1,124 @@
+.google-login img {
+    height: 30px;
+    width: 30px;
+}
+.ball {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    width: 100px;
+    background: red;
+    animation: border-animation 3s linear infinite forwards;
+}
+.home-container {
+    width: 100svw;
+    height: 100svh;
+    background: linear-gradient(to left, white,#b1caff);
+}
+.form-container{
+    background: linear-gradient(to right, #ffda96,#ffbe96);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(9, 44, 101, 0.5);
+}
+.back-to-home:hover
+{
+    text-decoration: underline;
+}
+.label {
+width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+@keyframes border-animation {
+    0% {
+        top: 0;
+        left: 0;
+        height: 4px;
+        width: 100px;
+        background: red;
+    }
+
+    25% {
+        top: 0;
+        left: 74%;
+        height: 4px;
+        width: 100px;
+        background: orange;
+    }
+
+    26% {
+        top: 0;
+        left: 100%;
+        height: 0px;
+        width: 0px;
+        background: orange;
+    }
+
+    27% {
+        top: 0;
+        left: 99%;
+        height: 100px;
+        width: 4px;
+        background: orange;
+    }
+
+    50% {
+        top: 74%;
+        left: 99%;
+        height: 100px;
+        width: 4px;
+        background: rgb(47, 255, 0);
+    }
+
+    51% {
+        top: 99%;
+        left: 100%;
+        height: 0px;
+        width: 0px;
+        background: rgb(47, 255, 0);
+    }
+
+    52% {
+        top: 99%;
+        left: 75%;
+        height: 4px;
+        width: 100px;
+        background: rgb(47, 255, 0);
+    }
+
+    75% {
+        top: 99%;
+        left: 0;
+        height: 4px;
+        width: 100px;
+        background: rgb(130, 198, 238);
+    }
+
+    76% {
+        top: 100%;
+        left: 0;
+        height: 0px;
+        width: 0px;
+        background: rgb(130, 198, 238);
+    }
+
+    77% {
+        top: 75%;
+        left: 0;
+        height: 100px;
+        width: 4px;
+        background: rgb(130, 198, 238);
+    }
+
+    100% {
+        top: 0;
+        left: 0;
+        height: 100px;
+        width: 4px;
+        background: red;
+    }
+}

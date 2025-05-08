@@ -1,0 +1,53 @@
+<app-animation class="z-50 fixed" *ngIf="isAnimation"></app-animation>
+<div class="home-container">
+  <div class="login-gif fixed flex top-2 right-2 items-center justify-center">
+    <p class="font-bold text-3xl">Login to Explore</p>
+  <img src="../../assets/login.gif" class="h-20 w-20">
+</div>
+    <div class="flex h-full flex-col justify-center items-center">
+        <div class="form-container relative p-5 sm:mx-auto sm:w-full sm:max-w-sm">
+            <div class="ball"></div>
+          <form (submit)="login($event)" class="space-y-6" >
+            <div>
+              <label for="email" class="block font-bold text-xl leading-6">Email address</label>
+              <div class="mt-2" style="border-radius:5px">
+                <div class="label w-full">
+                  <div style=" display: flex; border-radius:5px; height: 35px; width: 100%; align-items: center; position: relative;" class="sm:text-sm">
+                  <input class="h-full w-full" style="padding:0 0 0 5px; color: black; font-size: 18px; border-radius:5px;" [(ngModel)]="email" name="email" type="email"  required=true/>
+          </div>
+                </div>
+              </div>
+            </div>
+      
+            <div>
+              <div class="flex mt-6 items-center justify-between">
+                <label for="password" class="block font-bold text-xl leading-6 ">Password</label>
+                <div class="text-sm">
+                  <a href="#" class="font-semibold text-blue-600 hover:text-blue-900">Forgot password?</a>
+                </div>
+              </div>
+              <div class="mt-2" style="border-radius:5px">
+                <div class="label w-full">
+                  <div style=" display: flex; border-radius:5px; height: 35px; width: 100%; align-items: center; position: relative;" class="sm:text-sm">
+                  <input class="input-password h-full w-full" style="padding:0 28px 0 5px; color: black; font-size: 18px;border-radius:5px;"  [type]="passVisible ? 'text' : 'password'" [(ngModel)]="password" name="password" required=true/>
+          <img (click)="visibility()"[src]="passVisible ? '../../assets/visible.png' : '../../assets/invisible.png'" height="20px" width="20px"style="position: absolute; cursor: pointer;right:8px;"/>
+          </div>
+                </div>
+              </div>
+            </div>
+      <br>
+            <div>
+              <button type="submit" class="flex w-full justify-center rounded-md bg-green-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Sign in</button>
+            </div>
+            <div>
+                <button (click)="googleLogin()" class="google-login flex w-full justify-center items-center gap-1 rounded-md bg-gray-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-gray-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600"><span><img src="../../assets/google.png"></span>Sign in
+                    with Google</button>
+              </div>
+          </form>
+          <div class="flex justify-end mt-4 pr-3 w-full"> 
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="black" class="w-6 h-6"> <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" /> </svg>
+          <a [routerLink]="['/']" class="font-medium back-to-home">back to home</a>
+        </div>
+        </div>
+      </div>
+</div>

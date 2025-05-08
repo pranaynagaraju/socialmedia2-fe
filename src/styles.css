@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    /* Define the scrollbar width and color */
+::-webkit-scrollbar {
+  width: 4px; /* Set the width of the scrollbar */
+}
+
+/* Define the scrollbar track (the area behind the handle) */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Set the color of the track */
+}
+
+/* Define the scrollbar handle (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background-color: #000000; /* Set the color of the scrollbar handle */
+  border-radius: 2px; /* Set the border radius to make it rounded */
+}
+
+/* Define the scrollbar handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Set the color on hover */
+}
+}
+input::-ms-reveal,
+      input::-ms-clear {
+        display: none;
+      }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+

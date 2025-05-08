@@ -1,0 +1,34 @@
+.animationdiv {
+    height: 80px;
+    width: 80px;
+    border: 5px solid red;
+    border-radius: 50%;
+    border-left-color: white;
+    animation: load 2s linear infinite;
+   
+    
+  }
+  
+  @keyframes load {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .outer {
+    background: linear-gradient(to left, rgb(164, 255, 182),#b1caff);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  p {
+    font-size: 25px;
+  }
+  

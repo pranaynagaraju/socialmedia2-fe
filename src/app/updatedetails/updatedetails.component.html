@@ -1,0 +1,30 @@
+<app-animation class="z-50 fixed" *ngIf="isAnimation"></app-animation>
+<div class="home-container">
+    <div class="flex h-full flex-col justify-center items-center">
+        <div class="form-container relative p-5 sm:mx-auto sm:w-full sm:max-w-sm">
+            <div class="ball"></div>
+          <form (submit)="update($event)" class="space-y-6" >
+            <div>
+                <label for="username" class="block text-sm font-medium leading-6 text-white">Username</label>
+                <div class="mt-2" style="border-radius:5px">
+                  <div class="label w-full">
+                    <div style=" display: flex; border-radius:5px; height: 35px; width: 100%; align-items: center; position: relative;" class="sm:text-sm">
+                    <input class="h-full w-full" style="padding:0 0 0 5px; color: black; font-size: 18px; border-radius:5px;" [(ngModel)]="userName" name="username" type="text"  required=true/>
+            </div>
+                  </div>
+                </div>
+              </div>
+      
+
+      <br>
+            <div>
+              <button type="submit" class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Sign in</button>
+            </div>
+
+          </form>
+          <div class="flex justify-end mt-4 pr-3 w-full"> 
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" class="w-6 h-6"> <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" /> </svg>
+        </div>
+        </div>
+      </div>
+</div>

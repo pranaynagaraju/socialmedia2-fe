@@ -1,0 +1,37 @@
+.home-container {
+    width: 100svw;
+    height: 100svh;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.startup-text
+{
+    display: block;
+    background: linear-gradient(to right, rgb(11, 11, 255), violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 40px;
+    margin-bottom: 40px;
+    font-style: normal;
+    animation: none;
+    margin-left: 50px;
+}
+
+.company-text
+{
+    display: block;
+    background: linear-gradient(to right, rgb(255, 133, 26), violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    font-style: normal;
+    animation: none;
+    margin-left: 50px;
+}
